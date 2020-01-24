@@ -56,7 +56,7 @@ void loop() {
 
 
 void callback(char* topic, byte* payload, unsigned int length) {
-  Serial.print("Command teceived from AskSensors[");
+  Serial.print("Command received from AskSensors[");
   Serial.print(topic);
   Serial.print("] ");
   for (int i = 0; i < length; i++) {
